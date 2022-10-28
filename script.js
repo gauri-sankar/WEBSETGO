@@ -21,7 +21,6 @@ const game = () => {
 
 				const movesLeft = document.querySelector('.movesleft');
 				moves++;
-				//movesLeft.innerText = `Moves Left: ${10-moves}`;
 				
 
 				const choiceNumber = Math.floor(Math.random()*3);
@@ -55,15 +54,12 @@ const game = () => {
 				result.textContent = 'Computer Won';
 				compmsg.textContent='Computer selects';
                 messg.textContent=computer;
-				//computerScore++;
-				//computerScoreBoard.textContent = computerScore;
 
 			}else{
 				result.textContent = 'Player Won'
 				playerScore++;
 				compmsg.textContent='Computer selects';
 				messg.textContent=computer;
-				//playerScoreBoard.textContent = playerScore;
 			}
 		}
 		else if(player == 'scissors'){
@@ -71,14 +67,10 @@ const game = () => {
 				result.textContent = 'Computer Won';
 				compmsg.textContent='Computer selects';
 				messg.textContent=computer;
-				//computerScore++;
-				//computerScoreBoard.textContent = computerScore;
 			}else{
 				result.textContent = 'Player Won';
 				compmsg.textContent='Computer selects';
 				messg.textContent=computer;
-				//playerScore++;
-				//playerScoreBoard.textContent = playerScore;
 			}
 		}
 		else if(player == 'paper'){
@@ -86,15 +78,11 @@ const game = () => {
 				result.textContent = 'Computer Won';
 				compmsg.textContent='Computer selects';
 				messg.textContent=computer;
-				//computerScore++;
-				//computerScoreBoard.textContent = computerScore;
 			}else{
 				result.textContent = 'Player Won';
 				compmsg.textContent='Computer selects';
 				messg.textContent=computer;
 
-				//playerScore++;
-				//playerScoreBoard.textContent = playerScore;
 			}
 		}
 	}
